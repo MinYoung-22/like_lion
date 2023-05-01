@@ -19,6 +19,8 @@ a:link, a:visited{
     margin: 0 auto;
 }
 
+/* navigation bar  */
+
 nav{
     height: 80px;
     background-color: #dc143c;
@@ -51,4 +53,11 @@ ul.nav-btn > li{
     margin-left:25px;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* header */
+.hd{
+    position:relative;
+    height: 600px;
+    
 }
