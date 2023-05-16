@@ -2,14 +2,14 @@ let el = document.getElementById('birthday');
 let elResult = document.getElementById('result');
 let elSubmit = document.getElementById('submit');
 
-const today = newDate();
+const today = new Date();
 
 function calculateAge() {
 
     let birthDate = new Date(el.value);
 
-    if (today.getMonth() > birthDate.getMonth()||
-        (today.getMonth() == birthDate.getMonth()&&
+    if (today.getMonth() > birthDate.getMonth() ||
+        (today.getMonth() == birthDate.getMonth() &&
             today.getDate() >= birthDate.getDate()
         )
     ) {
@@ -25,4 +25,4 @@ function calculateAge() {
 
 }
 
-elSubmit.addEventListener('click', calculateAge)
+elSubmit.addEventListener("click", calculateAge)
